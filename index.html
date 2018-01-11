@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sleep, Friends, Grades | Code Ideas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <input type="checkbox" id="sleep" />
+    <label for="sleep">Sleep</label>
+    <input type="checkbox" id="friends" />
+    <label for="friends">Friends</label>
+    <input type="checkbox" id="grades" />
+    <label for="grades">Grades</label>
+  </main>
+  <footer>Made by <a href="https://twitter.com/KarllosSouza">@KarllosSouza</a>, inspired by <a href="https://twitter.com/Juan_urbina/status/931187429754769409">this tweet</a>.</footer>
+
+  <script type="text/javascript">
+    const allInputs = []
+    let checkedInputs = []
+
+    allInputs.forEach.call(document.querySelectorAll('input'), function(input) {
+      input.addEventListener('change', function() {
+        if (input.checked && checkedInputs.length === 2) {
+          const uncheckInput = checkedInputs[Math.round(Math.random())]
+          uncheckInput.checked = false
+        }
+        checkedInputs = document.querySelectorAll('input:checked')
+      })
+    })
+  </script>
+</body>
+</html>
