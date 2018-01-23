@@ -24,27 +24,28 @@ label {
 
 label:before,
 label:after {
-  border-radius: 10px;
   content: '';
   display: block;
-  left: 0;
   position: absolute;
   transition: all .25s ease;
 }
 
 label:before {
   background-color: #A1A1A1;
-  bottom: 9px;
-  height: 50px;
+  border-radius: 10px;
+  bottom: 5px;
+  height: 56px;
+  left: 0;
   width: 110px;
 }
 
 label:after {
   background-color: #F5F5F5;
-  box-shadow: 0 3px 1px rgba(0, 0, 0, .2);
-  height: 55px;
-  top: 10px;
-  width: 55px;
+  border-radius: 8px;
+  height: 50px;
+  left: 3px;
+  top: 14px;
+  width: 50px;
 }
 
 input:checked + label:before {
