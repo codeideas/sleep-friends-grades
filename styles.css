@@ -1,7 +1,7 @@
 body {
   align-items: center;
-  background-color: #B2C5D6;
-  color: #4B4443;
+  background-color: #E1F5FE;
+  color: #2C3E50;
   display: flex;
   font-family: Tahoma, Geneva, sans-serif;
   height: 100vh;
@@ -31,7 +31,7 @@ label:after {
 }
 
 label:before {
-  background-color: #A1A1A1;
+  background-color: #7F8C8D;
   border-radius: 10px;
   bottom: 5px;
   height: 56px;
@@ -40,7 +40,7 @@ label:before {
 }
 
 label:after {
-  background-color: #F5F5F5;
+  background-color: #ECF0F1;
   border-radius: 8px;
   height: 50px;
   left: 3px;
@@ -49,11 +49,11 @@ label:after {
 }
 
 input:checked + label:before {
-  background-color: #95C0D8;
+  background-color: #2980B9;
 }
 
 input:checked + label:after {
-  background-color: #177DB2;
+  background-color: #81D4FA;
   left: 56px;
 }
 
@@ -63,6 +63,6 @@ footer {
 }
 
 a {
-  color: #7392B7;
+  color: #2980B9;
   text-decoration: none;
 }
